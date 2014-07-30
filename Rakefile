@@ -9,6 +9,7 @@ task :print_favorite_food do
   puts "Favorite Food is: #{ENV["FAVORITE_FOOD"]}"
 end
 
+
 task :first do
   puts "First!"
 end
@@ -31,16 +32,17 @@ end
 task :brush_teeth => :eat_breakfast do
   puts "brush brush brush"
 end
-namespace :what_i_should_do do
+
+
+
 task :eat_breakfast => :wake_up do
   puts "I'm eating"
 end
 
+
 task :ready_for_class => :brush_teeth  do
   puts "I'm ready for class"
 end
-end
-
 
 namespace :greeting do
   desc "Say hello"
